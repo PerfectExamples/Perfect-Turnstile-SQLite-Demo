@@ -21,10 +21,12 @@ import PerfectLib
 import PerfectHTTP
 import PerfectHTTPServer
 
+import StORM
 import SQLiteStORM
 import PerfectTurnstileSQLite
 import PerfectRequestLogger
 
+//StORMdebug = true
 
 // Used later in script for the Realm and how the user authenticates.
 let pturnstile = TurnstilePerfectRealm()
