@@ -33,14 +33,16 @@ let pturnstile = TurnstilePerfectRealm()
 
 
 // Set the connection vatiable
-connect = SQLiteConnect("./authdb")
+//connect = SQLiteConnect("./authdb")
+SQLiteConnector.db = "./authdb"
+
 
 // Set up the Authentication table
-let auth = AuthAccount(connect!)
+let auth = AuthAccount()
 auth.setup()
 
 // Connect the AccessTokenStore
-tokenStore = AccessTokenStore(connect!)
+tokenStore = AccessTokenStore()
 tokenStore?.setup()
 
 //let facebook = Facebook(clientID: "CLIENT_ID", clientSecret: "CLIENT_SECRET")
