@@ -65,3 +65,8 @@ fastlane/screenshots
 Packages/
 *.xcodeproj
 authdb
+.build_lin
+.packages_lin
+buildlinux
+http_log.txt
+Package.swift.orig
