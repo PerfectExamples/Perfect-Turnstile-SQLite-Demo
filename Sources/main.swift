@@ -35,7 +35,7 @@ let pturnstile = TurnstilePerfectRealm()
 // Set the connection vatiable
 //connect = SQLiteConnect("./authdb")
 SQLiteConnector.db = "./authdb"
-
+RequestLogFile.location = "./http_log.txt"
 
 // Set up the Authentication table
 let auth = AuthAccount()
@@ -124,8 +124,8 @@ server.setResponseFilters([pturnstile.responseFilter])
 
 server.setRequestFilters([(authFilter, .high)])
 
-server.setRequestFilters([(myLogger.requestFilter(), .high)])
-server.setResponseFilters([(myLogger.responseFilter(), .low)])
+server.setRequestFilters([(myLogger, .high)])
+server.setResponseFilters([(myLogger, .low)])
 
 // Set a listen port of 8181
 server.serverPort = 8181
