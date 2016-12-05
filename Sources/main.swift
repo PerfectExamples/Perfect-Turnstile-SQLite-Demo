@@ -39,7 +39,13 @@ RequestLogFile.location = "./http_log.txt"
 
 // Set up the Authentication table
 let auth = AuthAccount()
-auth.setup()
+
+do {
+    try auth.setupTable()
+} catch {
+    fatalError("Could not set AuthAccount's SQLite DB table. exiting")
+}
+
 
 // Connect the AccessTokenStore
 tokenStore = AccessTokenStore()
