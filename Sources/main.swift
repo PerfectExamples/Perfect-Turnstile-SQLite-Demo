@@ -25,6 +25,7 @@ import StORM
 import SQLiteStORM
 import PerfectTurnstileSQLite
 import PerfectRequestLogger
+import TurnstilePerfect
 
 //StORMdebug = true
 
@@ -39,11 +40,11 @@ RequestLogFile.location = "./http_log.txt"
 
 // Set up the Authentication table
 let auth = AuthAccount()
-auth.setup()
+try? auth.setup()
 
 // Connect the AccessTokenStore
 tokenStore = AccessTokenStore()
-tokenStore?.setup()
+try? tokenStore?.setup()
 
 //let facebook = Facebook(clientID: "CLIENT_ID", clientSecret: "CLIENT_SECRET")
 //let google = Google(clientID: "CLIENT_ID", clientSecret: "CLIENT_SECRET")
