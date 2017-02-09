@@ -6,5 +6,6 @@ let package = Package(
     targets: [],
     dependencies: [
         .Package(url: "https://github.com/PerfectlySoft/Perfect-Turnstile-SQLite.git", majorVersion: 1, minor: 0),
+        .Package(url: "https://github.com/PerfectlySoft/Perfect-RequestLogger.git", majorVersion: 1),
     ]
 )
