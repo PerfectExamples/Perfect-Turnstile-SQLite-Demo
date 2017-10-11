@@ -1,10 +1,10 @@
 // Generated automatically by Perfect Assistant Application
-// Date: 2017-01-12 17:03:14 +0000
+// Date: 2017-10-11 21:26:06 +0000
 import PackageDescription
 let package = Package(
-    name: "PerfectTurnstileSQLiteDemo",
-    targets: [],
-    dependencies: [
-        .Package(url: "https://github.com/PerfectlySoft/Perfect-Turnstile-SQLite.git", majorVersion: 1, minor: 0),
-    ]
+	name: "PerfectTurnstileSQLiteDemo",
+	targets: [],
+	dependencies: [
+		.Package(url: "https://github.com/PerfectlySoft/Perfect-Turnstile-SQLite.git", majorVersion: 3),
+	]
 )

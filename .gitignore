@@ -71,3 +71,5 @@ buildlinux
 http_log.txt
 Package.swift.orig
 StORMlog.txt
+Package.resolved
+PADockerfile_build
